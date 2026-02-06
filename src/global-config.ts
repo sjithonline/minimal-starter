@@ -32,9 +32,10 @@ export type ConfigValue = {
 // ----------------------------------------------------------------------
 
 export const CONFIG: ConfigValue = {
-  appName: 'Minimal UI',
+  appName: 'OpenI',
   appVersion: packageJson.version,
-  serverUrl: process.env.NEXT_PUBLIC_SERVER_URL ?? '',
+  //serverUrl: process.env.NEXT_PUBLIC_SERVER_URL ?? '',
+  serverUrl: 'https://api-dev-minimal-v700.pages.dev',
   assetsDir: process.env.NEXT_PUBLIC_ASSETS_DIR ?? '',
   isStaticExport: JSON.parse(process.env.BUILD_STATIC_EXPORT ?? 'false'),
   /**
